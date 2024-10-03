@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Import de Google Fonts -->
     <style>
-        /* Ajoute ces styles ici ou dans style.css */
+        /* Centrer le contenu */
         body {
             display: flex;
             justify-content: center;
@@ -19,30 +19,35 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        header {
-            background-color: black; /* Met le header en noir */
-            color: white; /* Change la couleur du texte en blanc */
-            width: 100%; /* Prend toute la largeur */
-            text-align: center; /* Centre le texte */
-            padding: 20px 0; /* Ajoute du padding vertical */
+        /* Centrer l'image */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px; /* Modifie cette valeur pour ajuster la taille de l'image */
+            height: auto;
         }
 
-        .logo {
-            width: 150px; /* Réduit la taille de l'image */
-            height: auto; /* Maintient l'aspect ratio */
+        header {
+            margin: 0; /* Supprime la marge autour du header */
+            padding: 0; /* Supprime le padding éventuel */
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0; /* Supprime la marge au-dessus du titre */
         }
 
         .center-content {
             text-align: center;
-            margin-top: 10px;
-            padding: 20px; /* Ajoute un padding autour du contenu */
+            margin-top: 10px; /* Réduit l'espace au-dessus du contenu */
         }
-
+        
         p {
             font-size: 20px;
             font-weight: bold;
         }
 
+        /* Style du lien */
         a {
             font-size: 16px; /* Taille du texte à 16px */
             color: #0000FF; /* Couleur bleue */
@@ -51,17 +56,6 @@
 
         a:hover {
             text-decoration: underline;
-        }
-
-        /* Styles responsives */
-        @media (max-width: 768px) {
-            .logo {
-                width: 100px; /* Réduit encore la taille de l'image sur petits écrans */
-            }
-
-            p {
-                font-size: 18px; /* Réduit la taille du texte sur petits écrans */
-            }
         }
     </style>
 </head>
