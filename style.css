@@ -1,118 +1,36 @@
-* {
-    box-sizing: border-box; /* Ajout de la boîte pour le calcul des dimensions */
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* Couleur de fond douce */
-    color: #333; /* Couleur de texte */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f4f4f4; /* Couleur de fond générale */
 }
 
 header {
-    background-color: black; /* Couleur orange */
-    color: white;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le header */
+    background-color: #000; /* Couleur de fond noire */
+    color: #fff; /* Couleur du texte en blanc */
+    text-align: center; /* Centre le contenu */
+    padding: 20px 0; /* Espace autour du contenu */
 }
 
 .logo {
-    width: 150px; /* Ajustez la taille du logo selon vos besoins */
-    margin-bottom: 10px; /* Espacement sous le logo */
-    animation: fadeIn 1s; /* Animation pour le logo */
-}
-
-h1 {
-    margin: 10px 0;
-    animation: slideIn 0.5s; /* Animation pour le titre */
-}
-
-h2, h3 {
-    color: #FFA500; /* Couleur orange pour les sous-titres */
-    margin-top: 20px;
-    animation: fadeIn 1s; /* Animation pour les sous-titres */
-}
-
-p {
-    max-width: 600px; /* Limite la largeur du texte */
-    line-height: 1.6;
-    text-align: center; /* Centre le texte */
-    padding: 0 15px; /* Ajoute un peu d'espacement sur les côtés */
-    animation: fadeIn 1.5s; /* Animation pour le paragraphe */
-}
-
-.download-buttons {
-    margin: 20px 0;
-}
-
-.animated-button {
-    background-color: #FFA500; /* Couleur orange des boutons */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Animation de transition */
-    margin: 0 10px; /* Espacement entre les boutons */
-}
-
-.animated-button:hover {
-    background-color: #FF8C00; /* Couleur d'hover plus foncée */
-    transform: translateY(-3px); /* Légère élévation à l'hover */
-}
-
-footer {
-    margin-top: auto; /* Push le footer vers le bas */
-    padding: 10px;
-    background-color: #FFA500; /* Couleur orange */
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Styles pour les appareils mobiles */
-@media (max-width: 600px) {
-    .logo {
-        width: 100px; /* Réduit la taille du logo sur mobile */
-    }
-
-    .animated-button {
-        padding: 10px 15px; /* Ajuste le padding des boutons sur mobile */
-        font-size: 14px; /* Réduit la taille de police sur mobile */
-    }
+    width: 150px; /* Réduit la taille du logo */
+    height: auto; /* Conserve les proportions du logo */
 }
 
 .center-content {
-    text-align: center; /* Centre le texte à l'intérieur de cette section */
-    margin: 20px; /* Ajoute un peu d'espace autour de la section */
-    padding: 0 15px; /* Ajoute de l'espacement sur les côtés */
+    text-align: center; /* Centre le texte dans la section */
+    margin: 20px; /* Marge autour de la section */
+    padding: 20px; /* Espace interne */
+    background-color: #fff; /* Fond blanc pour la section */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
+a {
+    color: #007BFF; /* Couleur du lien */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Souligne le lien au survol */
+}
